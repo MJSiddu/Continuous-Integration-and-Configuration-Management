@@ -1,4 +1,4 @@
-# HW4 - Configuration Management and Continuous Deployment
+# Configuration Management and Continuous Deployment
 
 ## Setup Steps
 
@@ -9,16 +9,16 @@ The Steps to set up the project can be found here: [Steps.md](Steps.md)
 The playbook script, roles script and inventory file are present here: [AnsibleNode](AnsibleNode)
 
 ## Screenshots
-![SC1](https://github.ncsu.edu/smadhur/HW4-510/blob/master/Screenshots/Screenshot1.PNG)
+![SC1](https://github.com/MJSiddu/Continuous-Integration-and-Configuration-Management/blob/master/Screenshots/Screenshot1.PNG)
 
-![SC2](https://github.ncsu.edu/smadhur/HW4-510/blob/master/Screenshots/Screenshot2.PNG)
+![SC2](https://github.com/MJSiddu/Continuous-Integration-and-Configuration-Management/blob/master/Screenshots/Screenshot2.PNG)
 
-![SC3](https://github.ncsu.edu/smadhur/HW4-510/blob/master/Screenshots/Screenshot3.PNG)
+![SC3](https://github.com/MJSiddu/Continuous-Integration-and-Configuration-Management/blob/master/Screenshots/Screenshot3.PNG)
 
-![SC4](https://github.ncsu.edu/smadhur/HW4-510/blob/master/Screenshots/Screenshot4.PNG)
+![SC4](https://github.com/MJSiddu/Continuous-Integration-and-Configuration-Management/blob/master/Screenshots/Screenshot4.PNG)
 
 ### Application Running:
-![SC5](https://github.ncsu.edu/smadhur/HW4-510/blob/master/Screenshots/Screenshot5.PNG)
+![SC5](https://github.com/MJSiddu/Continuous-Integration-and-Configuration-Management/blob/master/Screenshots/Screenshot5.PNG)
 
 
 What is continuous integration. How is it used on a project?
@@ -34,7 +34,7 @@ results of the previous step.
 
 *Process flow:*
 
-![CI](https://github.ncsu.edu/smadhur/HW4-510/blob/master/Screenshots/CI.PNG)
+![CI](https://github.com/MJSiddu/Continuous-Integration-and-Configuration-Management/blob/master/Screenshots/CI.PNG)
 
 
 Why should developers use configuration management tools to manage their software programs? What can go wrong if they don't?
