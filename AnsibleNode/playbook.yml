@@ -1,0 +1,50 @@
+---
+- hosts: all
+#  ************************* Setup ******************************
+  roles:
+      - {role: geerlingguy.nodejs , become: yes}
+      - {role: geerlingguy.git , become: yes}
+  tasks:
+  - name: Install forever
+    npm:
+      name: forever
+      state: present
+      global: true
+    become: yes
+
+  - name: Clone git repo
+    git:
+       repo: https://github.com/CSC-DevOps/App.git
+       dest: /home/siddumj21/App
+       clone: yes
+    become: yes
+
+  - name: Install npm packages based on package.json
+    shell: npm install
+    args:
+       chdir: App
+    become: yes
+    become_user: root
+    become_method: sudo
+
+  #  ************************* Tasks ******************************
+  - name: Run the app forever at node 3090
+    shell: "forever start /home/siddumj21/App/main.js start 3090"
+    become: yes
+
+  - name: Ensure bash, openssl, openssh-client and openssh-server are running the latest version
+    apt:
+       name: ['bash', 'openssl', 'openssh-client', 'openssh-server']
+       state: latest
+    become: yes
+
+  - name: Remove content in /tmp/*
+    file: 
+       path: /tmp/*
+       state: absent
+    become: yes
+
+  - name: Create new /tmp/
+    file:
+       path: /home/siddumj21/App/tmp
+       state: directory
